@@ -1,3 +1,5 @@
+import '../styles/cart.css'
+
 function Cart() {
 
 
@@ -6,15 +8,17 @@ function Cart() {
     const flowerPrice = 15
 
 
-    return (<div>
-        <h2>Panier</h2>
-        <ul>
-        <li>Monstera : {monsteraPrice}€</li>
-         <li>Lierre : {ivyPrice}€</li>
-         <li>Fleurs : {flowerPrice}€</li>
-        </ul>
-          Total : {monsteraPrice + ivyPrice + flowerPrice }€
-          </div>)
+    return (
+        <div className='lmj-cart'>
+            <h2>Panier</h2>
+            <ul>
+                <li>Monstera : {monsteraPrice}€</li>
+                <li>Lierre : {ivyPrice}€</li>
+                <li>Fleurs : {flowerPrice}€</li>
+            </ul>
+            Total : {monsteraPrice + ivyPrice + flowerPrice }€
+        </div>
+          )
     }
 
 export default Cart
